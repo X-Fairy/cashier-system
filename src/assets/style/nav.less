@@ -1,0 +1,44 @@
+.nav{
+    position: absolute;
+    width: 100px;
+    background: @bgColor;
+    // line-height: 44px;
+    font-size: 14px;
+    color: #fff;
+    box-sizing: border-box;
+    height: 100%;
+    cursor: pointer;
+    overflow-y: auto;
+    transition: width .5s linear;
+    word-break: keep-all;
+    white-space: nowrap;
+    bottom: 0;
+    top: 0;
+    border-right: 1px solid #ddd;
+    overflow: auto;
+    .user{
+        padding-top:30px;
+        margin-bottom: 50px;
+        text-align: center;
+        // border-bottom:1px solid @color;
+    }
+    li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: .85rem;
+        // color:#6e768e;
+        text-align: center;
+        padding:20px 0;
+    }
+    li.selected,li:hover{
+        color:@bgColor;
+        background: @color;
+        border-bottom: 1px solid @bgColor;
+    }
+    path{
+        fill:#fff;
+    }
+    path:hover{
+        fill:@color;
+    }
+    
+}
